@@ -36,8 +36,7 @@ public class App {
 		
 		System.out.printf("total is %d\n", total);
 		
-		AA aa;
-		com.newlecture.app.bb.AA a1;
+
 
 	}
 
