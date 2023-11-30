@@ -79,7 +79,7 @@ public class ex02 {
 
 //------------------성적 입력---------------
 			else if (menu == 1) {
-
+System.out.println("");
 				System.out.println("┌────────────────┐");
 				System.out.println("│     성적입력  　　 │ ");
 				System.out.println("└────────────────┘");
