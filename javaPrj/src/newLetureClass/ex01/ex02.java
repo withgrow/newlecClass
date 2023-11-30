@@ -54,9 +54,10 @@ public class ex02 {
 				fis.close();
 
 			}
-
+           
 			// ------성적출력----------------------------
 			else if (menu == 2) {
+				   System.out.println("");
 				total = kor1 + kor2 + kor3;
 				avg = (float) total / 3;
 				total = kor1 + kor2 + kor3;
