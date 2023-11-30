@@ -1,11 +1,10 @@
-package com.newlecture.app.aa;
+package newLecture;
 
-public class AA {
+public class test1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		System.out.println("B");
+System.out.println("테스트입니다");
 	}
 
 }
