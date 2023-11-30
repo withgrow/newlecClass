@@ -8,7 +8,6 @@ public class Game {
 	
 		Scanner scanner = new Scanner(System.in);
 
-		Scanner scanner2 = new Scanner(System.in);
 
 
 
@@ -331,6 +330,7 @@ if (input == 3) { // 닉네임 변경 기능
 
 
 				System.out.println("현재 닉네임은 '"+mainCharacterName+"'입니다. ! 수정할 이름을 입력하세요 !");
+				Scanner scanner2 = new Scanner(System.in);
 
 				changeName = scanner2.next();
 
