@@ -119,6 +119,11 @@ System.out.println("");
 			else if (menu == 5) {
 				break;
 			}
+			else {
+				System.out.println("해당 메뉴는 존재하지 않습니다");
+				System.out.println("메뉴로 돌아가시려면 아무키나 입력하세요");
+				System.in.read();
+			}
 
 		}
 	}
