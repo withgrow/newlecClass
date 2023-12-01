@@ -23,7 +23,7 @@ public class ex03 {
 			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\javaPrj\\res\\grad.txt");
 
 			Scanner scan = new Scanner(fis);
-
+System.out.println("");
 			kor1 = scan.nextInt();
 			kor2 = scan.nextInt();
 			kor3 = scan.nextInt();
