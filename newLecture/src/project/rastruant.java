@@ -63,14 +63,14 @@ public class rastruant {
 	                  System.out.println("김치찌개 주문");
 	                  kimchiNumber++;
 
-	               } else if (choice == 2) {
+	               }  if (choice == 2) {
 	                  System.out.println("돼지국밥 주문");
 	                  gukbabNumber++;
-	               } else if(choice==3){
+	               }  if(choice==3){
 	                  System.out.println("제육덮밥 주문");
 	                  jaeyukNumber++;
 	               }
-	               else if(choice==4) {
+	                if(choice==4) {
 	                  System.out.println("추가주문 시스템");
 	                  human++;
 	                  System.out.println("1)김치찌개, 2)돼지국밥, 3)제육덮밥  ");
@@ -79,19 +79,19 @@ public class rastruant {
 	                  if(addFood ==1) {
 	                     kimchiNumber++;
 	                  }
-	                  else if(addFood==2) {
+	                   if(addFood==2) {
 	                     gukbabNumber++;
 	                  }
-	                  else {
+	                   {
 	                     jaeyukNumber++;
 	                  }
 	                  
 	               }
-	               else if(choice==5) {
+	                if(choice==5) {
 	                  System.out.println("주문끝");
 	                  break;
 	               }
-	               else  {
+	                 {
 	                  System.out.println("주문 X");
 	                  
 	               }

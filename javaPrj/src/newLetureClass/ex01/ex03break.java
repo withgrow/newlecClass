@@ -10,15 +10,15 @@ import java.util.Scanner;
 
 import javax.imageio.plugins.tiff.ExifGPSTagSet;
 
-public class ex22 {
+public class ex03break {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		int kor1 = 0;
 		int kor2 = 0;
 		int kor3 = 0;
-
-		exit : while(true) {
+		boolean run =true;
+		while (run) {
 
 			int menu;
 			int total;
@@ -42,8 +42,8 @@ public class ex22 {
 
 			// -------성적로드----------------------------
 
-		switch(menu) {
-		   case 3: {
+			switch (menu) {
+			case 3: {
 
 				FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\javaPrj\\res\\grad.txt");
 
@@ -52,16 +52,16 @@ public class ex22 {
 				kor1 = scan.nextInt();
 				kor2 = scan.nextInt();
 				kor3 = scan.nextInt();
-
+				System.out.println("읽어왔습니다.");
 				scan.close();
 				fis.close();
 				break;
 			}
-           
+
 			// ------성적출력----------------------------
-		   case 2: {
-				   System.out.println("");
-				   System.out.println("");
+			case 2: {
+				System.out.println("");
+				System.out.println("");
 				total = kor1 + kor2 + kor3;
 				avg = (float) total / 3;
 				total = kor1 + kor2 + kor3;
@@ -81,7 +81,7 @@ public class ex22 {
 			}
 
 //------------------성적 입력---------------
-		   case 1: {
+			case 1: {
 				System.out.println("┌────────────────┐");
 				System.out.println("│     성적입력  　　 │ ");
 				System.out.println("└────────────────┘");
@@ -107,7 +107,7 @@ public class ex22 {
 				break;
 			}
 
-		   case 4: { 
+			case 4: {
 
 				FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\git\\newlecClass\\javaPrj\\res\\grad.txt");
 				PrintStream ps2 = new PrintStream(fos);
@@ -118,23 +118,21 @@ public class ex22 {
 				break;
 			}
 
-		   case 5: {
-			   System.out.println("종료");
-				break exit;
-			
+			case 5: {
+				System.out.println("종료");
+				run=false;
+				break;
+
 			}
-		  
-		   
+
 			default: {
 				System.out.println("해당 메뉴는 존재하지 않습니다");
 				System.out.println("메뉴로 돌아가시려면 아무키나 입력하세요");
 				System.in.read();
 			}
-			
-			 
-		}
-		
-	
+
+			}
+
 		}
 	}
 }

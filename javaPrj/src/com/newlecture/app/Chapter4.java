@@ -29,11 +29,11 @@ public class Chapter4 {
 		   if (input >= 90) {
 			   grade = 'A';
 			   
-		   }else if(input >= 80) {
+		   } if(input >= 80) {
 			   grade = 'B';
-		   }else if(input >= 70) {
+		   } if(input >= 70) {
 			   grade = 'C';
-		   }else  {
+		   }  {
 			   grade = 'F';
 		   }
 			   */
@@ -41,18 +41,18 @@ public class Chapter4 {
 				   if (input < 70) {
 					   grade = 'F';
 				   }
-				   else if (input >= 70 && input < 80) {
+				    if (input >= 70 && input < 80) {
 					   grade = 'C';
 				   }
-				   else if (input >= 80 && input < 90) {
+				    if (input >= 80 && input < 90) {
 					   grade = 'B';
 				   }
-				   else { grade = 'A';}
+				    { grade = 'A';}
 				   
 				   System.out.println(grade);
 				   
 		  }
-		    else
+		    
 		    	{
 			   System.out.println("잘못된 정보입니다 다시 입력해주세요.");
 		   }

@@ -1,4 +1,4 @@
-package newLetureClass.ex01;
+package project;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import javax.lang.model.element.NestingKind;
 
-public class exam1 {
+public class newBookAdd {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -17,30 +17,32 @@ public class exam1 {
 		String name1, name2, name3;
 		int price1, price2, price3;
 
-		price1 = 20000;
-		price2 = 30000;
-		price3 = 10000;
-
+		
 		// -----------------책정보저장
 		{
 
 			System.out.println("┌────────────────┐");
-			System.out.println("│     책정보저장    │");
+			System.out.println("│     책정보저장  　 │");
 			System.out.println("└────────────────┘");
-			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\eclipse-workspace\\javaPrj\\res\\text4.txt");
+			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\javaPrj\\res\\text4.txt");
 			Scanner scan = new Scanner(fis);
 			name1 = scan.next();
 			name2 = scan.next();
 			name3 = scan.next();
+
+			
+			price1 = scan.nextInt();
+			price2 = scan.nextInt();
+			price3 = scan.nextInt();
 
 			scan.close();
 			fis.close();
 			System.out.println("<<신간 현재 책 목록>>");
 
 			System.out.print("제목 :" + name1);
-
+			System.out.print(",");
 			System.out.print(name2);
-
+			System.out.print(",");
 			System.out.print(name3);
 			System.out.println();
 
@@ -59,7 +61,7 @@ public class exam1 {
 
 		{
 			System.out.println("┌────────────────┐");
-			System.out.println("│     책정보입력    │");
+			System.out.println("│     책정보입력  　 │");
 			System.out.println("└────────────────┘");
 			System.out.println("<<추가 할 책 입력>>");
 
@@ -68,6 +70,7 @@ public class exam1 {
 			name1 = scan.nextLine();
 			System.out.print("1)추가 할 책 '가격' 입력 : ");
 			price1 = scan.nextInt();
+			
 			if (price1 < 0) {
 				System.out.println("0보다 큰 숫자 입력해주세요");
 			}
@@ -96,15 +99,19 @@ public class exam1 {
 		// -----------------책정보출력
 		{
 			System.out.println("┌────────────────┐");
-			System.out.println("│     책정보출력    │");
+			System.out.println("│     책정보출력  　 │");
 			System.out.println("└────────────────┘");
 
-			FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\eclipse-workspace\\javaPrj\\res\\text4.txt");
+			FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\git\\newlecClass\\javaPrj\\res\\text4.txt");
 			PrintStream pis = new PrintStream(fos);
 
-			pis.printf("%s, %s, %s \n", name1, name2, name3);
+			pis.printf("%s %s %s \n", name1, name2, name3); // \n 으로 개행하면 다음줄 부터 읽을수있음
 
-			pis.printf("%d, %d, %d", price1, price2, price3);
+			pis.printf("%d %d %d", price1, price2, price3);
+			
+		pis.flush();
+		pis.close();
+		fos.close();
 
 		}
 	}

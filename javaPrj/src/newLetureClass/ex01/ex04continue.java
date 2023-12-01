@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import java.lang.invoke.MethodHandles.Lookup.ClassOption;
 import java.util.Scanner;
 
-public class ex02 {
+public class ex04continue {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -52,11 +52,11 @@ public class ex02 {
 
 				scan.close();
 				fis.close();
-
+				continue;
 			}
            
 			// ------성적출력----------------------------
-			else if (menu == 2) {
+			 if (menu == 2) {
 				   System.out.println("");
 				   System.out.println("");
 				total = kor1 + kor2 + kor3;
@@ -78,8 +78,8 @@ public class ex02 {
 			}
 
 //------------------성적 입력---------------
-			else if (menu == 1) {
-System.out.println("");
+			 if (menu == 1) {
+
 				System.out.println("┌────────────────┐");
 				System.out.println("│     성적입력  　　 │ ");
 				System.out.println("└────────────────┘");
@@ -105,7 +105,7 @@ System.out.println("");
 
 			}
 
-			else if (menu == 4) { // 메뉴
+			 if (menu == 4) { // 메뉴
 
 				FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\git\\newlecClass\\javaPrj\\res\\grad.txt");
 				PrintStream ps2 = new PrintStream(fos);
@@ -116,10 +116,10 @@ System.out.println("");
 
 			}
 
-			else if (menu == 5) {
+			 if (menu == 5) {
 				break;
 			}
-			else {
+			 {
 				System.out.println("해당 메뉴는 존재하지 않습니다");
 				System.out.println("메뉴로 돌아가시려면 아무키나 입력하세요");
 				System.in.read();

@@ -23,10 +23,6 @@ public static void main(String[] args) throws IOException {
 	fout.println("ㅣ     성적출력     ㅣ");
 	fout.println("└────────────────┘");
 	
-	
-	
-	
-	
 
 	fout.println("hello");
 	fout.print(false);
