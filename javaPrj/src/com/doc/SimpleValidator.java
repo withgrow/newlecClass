@@ -9,9 +9,9 @@ public class SimpleValidator {
 		Scanner scan = new Scanner(System.in);
 		boolean p = true;
 		int number = 0;
-		System.out.println();
+		System.out.println("1을 입력해");
 		while (p) {
-	
+		
 		number = scan.nextInt();
 		
 		if(number ==1 ) {
