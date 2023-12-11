@@ -27,6 +27,12 @@ public class Login {
 //			System.out.println("이메일 또는 비밀번호를 확인해주세요");
 //		}
 		
+		System.out.println("간편로그인");
+		int loginNum = scan.nextInt();
+		if(loginNum==1) {
+			System.out.println("카톡");
+		}
+		
 	}
 
 
