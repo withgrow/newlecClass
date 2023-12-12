@@ -10,6 +10,8 @@ public class SignUp {
 		// TODO Auto-generated method stub
 
 		System.out.println("회원가입");
+		
+		
 
 		{
 			System.out.println("사진등록");

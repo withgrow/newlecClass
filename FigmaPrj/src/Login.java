@@ -32,6 +32,9 @@ public class Login {
 		if(loginNum==1) {
 			System.out.println("카톡");
 		}
+		if(loginNum ==2) {
+			System.out.println("네이버");
+		}
 		
 	}
 
