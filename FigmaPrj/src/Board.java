@@ -37,13 +37,15 @@ public class Board {
 
 		}
 
+		
 		{// 게시판 파일 로드해서 새로운 파일에 쓰기
 
+		
+
+			FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
+			PrintStream ps = new PrintStream(fos);
 			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
 			Scanner scan = new Scanner(fis);
-
-			FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\board2.txt");
-			PrintStream ps = new PrintStream(fos);
 			while (scan.hasNextLine()) {
 				String p = scan.nextLine();
 				ps.printf("%s\n", p);
@@ -68,6 +70,8 @@ public class Board {
 
 			}
 
+			
+			
 //		{
 //			// 게시판 추천수 합 구하는것 
 //			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.csv");
@@ -88,6 +92,9 @@ public class Board {
 //		}
 //		
 //
+			
+			
+			
 //		{//계시판 검색
 //			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.csv");
 //			Scanner scan = new Scanner(fis);
