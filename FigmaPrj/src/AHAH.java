@@ -13,7 +13,7 @@ public class AHAH {
 		int countBoard = 0;
 
 		{
-			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
+			FileInputStream fis = new FileInputStream("C:\\Users\\oneto\\git\\newlecClass\\FigmaPrj\\src\\board2.txt");
 			Scanner scan = new Scanner(fis);
 
 			scan.nextLine();
@@ -26,8 +26,11 @@ public class AHAH {
 			fis.close();
 
 		}
+		
+			
+		
 		int i = 0;
-		FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
+		FileInputStream fis = new FileInputStream("C:\\Users\\oneto\\git\\newlecClass\\FigmaPrj\\src\\board2.txt");
 		Scanner scan = new Scanner(fis);
 
 		String[] str = new String[countBoard + 50];
@@ -45,7 +48,7 @@ public class AHAH {
 
 			
 
-			FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
+			FileOutputStream fos = new FileOutputStream("C:\\Users\\oneto\\git\\newlecClass\\FigmaPrj\\src\\board2.txt");
 			PrintStream ps = new PrintStream(fos);
 	
 			
@@ -73,16 +76,13 @@ public class AHAH {
 				i++;
 				for(int x=0; x<str.length; x++) {
 					
-					pis2.printf("%s\n", str[i]);
+					
+		
 				}
 			}
-			
-		
-			
 		
 		
 		
 		}
 		
-}
-}
+}}

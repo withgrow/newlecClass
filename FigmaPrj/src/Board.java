@@ -24,7 +24,7 @@ public class Board {
 
 		// 게시글 카운트 갯수 세기
 		{
-			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
+			FileInputStream fis = new FileInputStream("C:\\Users\\oneto\\git\\newlecClass\\FigmaPrj\\src\\board3.txt");
 			Scanner scan = new Scanner(fis);
 
 			scan.nextLine();
@@ -41,17 +41,19 @@ public class Board {
 		{// 게시판 파일 로드해서 새로운 파일에 쓰기
 
 		
-
-			FileOutputStream fos = new FileOutputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
+			
+			FileOutputStream fos = new FileOutputStream("C:\\Users\\oneto\\git\\newlecClass\\FigmaPrj\\src\\board2.txt");
 			PrintStream ps = new PrintStream(fos);
-			FileInputStream fis = new FileInputStream("C:\\Users\\hi\\git\\newlecClass\\FigmaPrj\\src\\res\\board.txt");
+			FileInputStream fis = new FileInputStream("C:\\Users\\oneto\\git\\newlecClass\\FigmaPrj\\src\\board3.txt");
 			Scanner scan = new Scanner(fis);
 			while (scan.hasNextLine()) {
 				String p = scan.nextLine();
 				ps.printf("%s\n", p);
 			}
+		
+			
 			Scanner scan2 = new Scanner(System.in);
-
+		
 			boolean a = true;
 			while (a) {
 				String nickname;
@@ -67,9 +69,18 @@ public class Board {
 				ps.printf("%s,", nickname);
 				ps.printf("%s,", title2);
 				ps.printf("%s \n", content2);
-
+			
+				FileInputStream in = new FileInputStream("C:\\\\Users\\\\oneto\\\\git\\\\newlecClass\\\\FigmaPrj\\\\src\\\\board2.txt");
+				FileOutputStream os = new FileOutputStream("C:\\\\Users\\\\oneto\\\\git\\\\newlecClass\\\\FigmaPrj\\\\src\\\\board3.txt");
+				PrintStream os2 = new PrintStream(os);
+				Scanner scan3 = new Scanner(in);
+				while(scan3.hasNextLine()) {
+					os2.printf("%s\n",scan3.nextLine());
+					
+				}
+				
 			}
-
+			
 			
 			
 //		{
